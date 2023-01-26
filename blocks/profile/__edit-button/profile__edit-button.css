@@ -1,0 +1,10 @@
+.profile__edit-button {
+    display: flex;
+    align-self: center;
+}
+
+.profile__edit-button:hover {
+    cursor: pointer;
+    opacity: .6;
+}
+

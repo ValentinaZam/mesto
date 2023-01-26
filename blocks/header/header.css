@@ -1,0 +1,12 @@
+.header {
+    max-width: 880px;
+    margin: 45px auto 0;
+    border-bottom: 1px solid #545454;
+    /* opacity: .7; */
+   
+}
+
+.header::before {
+    border-bottom: 1px solid #545454;
+    opacity: .7;
+}
