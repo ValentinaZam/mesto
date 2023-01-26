@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,11 @@
     <title>Mesto</title>
     <link rel="stylesheet" href="./pages/index.css">
 </head>
+
 <body class="body">
     <div class="page">
         <header class="header">
-            <img class="header__logo" src="./images/logo/logo_header.svg"
-                alt="Логотип Mesto">
+            <img class="header__logo" src="./images/logo/logo_header.svg" alt="Логотип Mesto">
         </header>
         <main>
             <section class="profile">
@@ -19,14 +20,65 @@
                 <div class="profile__info">
                     <h1 class="profile__name">Жак-Ив Кусто</h1>
                     <a class="profile__edit-button" href="#">
-                    <img class="profile__vector" src="./images/Edit Button.svg" alt="Корректор"></a>
+                        <img class="profile__vector" src="./images/Edit Button.svg" alt="Корректор"></a>
                     <p class="profile__prof">Исследователь океана</p>
                 </div>
                 <a class="profile__add-button" href="#">
                     <img class="profile__vector-add" src="./images/vector.svg" alt="Кнопка добавления"></a>
             </section>
+            <section class="elements">
+                <ul class="spisok">
+                    <li class="element">
+                        <img class="element__photo" src="./images/karachaevsk.jpg" alt="Карачаевск">
+                        <div class="element__mesto">
+                            <p class="element__text">Карачаевск</p>
+                            <img class="element__like" src="./images/Vector-2.svg" alt="Лайк">
+                        </div>
+                    </li>
+                    <li class="element">
+                        <img class="element__photo" src="./images/zima.jpg" alt="Зима город">
+                        <div class="element__mesto">
+                            <p class="element__text">Комсомольск-на-Амуре</p>
+                            <img class="element__like" src="./images/Vector-2.svg" alt="Лайк">
+                        </div>
+                    </li>
+                    <li class="element">
+                        <img class="element__photo" src="./images/island.jpg" alt="Остров">
+                        <div class="element__mesto">
+                            <p class="element__text">Лофот</p>
+                            <img class="element__like" src="./images/Vector-2.svg" alt="Лайк">
+                        </div>
+                    </li>
+                    <li class="element">
+                        <img class="element__photo" src="./images/mountains.jpg" alt="Горы">
+                        <div class="element__mesto">
+                            <p class="element__text">Алтай</p>
+                            <img class="element__like" src="./images/Vector-2.svg" alt="Лайк">
+                        </div>
+                    </li>
+                    <li class="element">
+                        <img class="element__photo" src="./images/ocean.jpg" alt="Океан">
+                        <div class="element__mesto">
+                            <p class="element__text">Балтика</p>
+                            <img class="element__like" src="./images/Vector-2.svg" alt="Лайк">
+                        </div>
+                    </li>
+                    <li class="element">
+                        <img class="element__photo" src="./images/ladder.jpg" alt="Лестница">
+                        <div class="element__mesto">
+                            <p class="element__text">Калининград</p>
+                            <img class="element__like" src="./images/Vector-2.svg" alt="Лайк">
+                        </div>
+                    </li>
+                </ul>
+            </section>
         </main>
+
+        <footer class="footer">
+           &copy; 2020 Mesto Russia
+        </footer>
     </div>
-    
+
 </body>
+
 </html>
