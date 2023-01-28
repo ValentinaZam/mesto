@@ -4,10 +4,23 @@
     display: flex;
     margin: 0;
     padding: 0;
-    border: 0;
+    border: 2px solid #FFFFFF;
     align-self: center;
-    background-size: cover;
     position: relative;
-    background-image: url(../../../images/button/add-button.svg);
+    background-image: url(../../../images/button/add-button-icon.svg);
+    background-size: 22px;
+    background-repeat: no-repeat;
+    background-position: center;
     background-color: rgba(0, 0, 0, 0);
+}
+
+.profile__button-add:hover {
+    cursor: pointer;
+    opacity: .5;
+}
+
+@media screen and (max-width: 700px) {
+    .profile__button-add {
+        width: 93%;
+    }
 }
