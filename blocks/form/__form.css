@@ -1,0 +1,13 @@
+.form {
+    margin: auto;
+    display: block;
+    box-sizing: border-box;
+    padding: 34px 36px 37px;
+    flex-direction: column;
+    width: 430px;
+    height: 330px;
+    background-color: #fff;
+    border-radius: 10px;
+    color: black;
+    align-items: center;
+}
