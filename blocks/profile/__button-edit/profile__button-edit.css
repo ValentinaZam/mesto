@@ -9,14 +9,14 @@
     position: relative;
     background-image: url(../../../images/button/edit-button.svg);
     background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
 }
 
 .profile__button-edit:hover {
-    cursor: pointer;
     opacity: .6;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
     .profile__button-edit {
         width: 18px;
         height: 18px;

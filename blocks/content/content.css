@@ -18,5 +18,6 @@
     .content {
         grid-template-columns: 282px;
         grid-template-rows: repeat(6, 361px);
+        row-gap: 19.8px;
     }
 }

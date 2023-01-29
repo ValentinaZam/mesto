@@ -1,6 +1,6 @@
 .footer {
     max-width: 318px;
-    margin: 66px auto 60px 200px;
+    margin: 50px auto 60px 200px;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -10,7 +10,7 @@
 
 @media screen and (max-width: 920px) {
     .footer {
-        margin: 48px 19px 36px;
+        margin: 34px 19px 36px;
         font-size: 14px;
         line-height: 17px;
     }

@@ -20,54 +20,54 @@
                 <img class="profile__photo" src="./images/kusto_photo.jpg" alt="Фотография Жак Ива Кусто">
                 <div class="profile__info">
                     <h1 class="profile__name">Жак-Ив Кусто</h1>
-                    <button class="profile__button-edit"></button>
+                    <button class="profile__button-edit" type="button" aria-label="Корректировать"></button>
                     <p class="profile__prof">Исследователь океана</p>
                 </div>
-                <button class="profile__button-add"></button>
+                <button class="profile__button-add" type="button" aria-label="Добавить"></button>
             </section>
 
-            <section class="elements">
+            <section class="elements" aria-label="Главные">
                 <ul class="content">
                     <li class="element">
                         <img class="element__photo" src="./images/karachaevsk.jpg" alt="Карачаевск">
                         <div class="element__mesto">
                             <p class="element__text">Карачаевск</p>
-                            <img class="element__like" src="./images/button/like.svg" alt="Лайк">
+                            <button class="element__button-like" type="button" aria-label="Понравилось">
                         </div>
                     </li>
                     <li class="element">
                         <img class="element__photo" src="./images/zima.jpg" alt="Зима город">
                         <div class="element__mesto">
                             <p class="element__text">Комсомольск-на-Амуре</p>
-                            <img class="element__like" src="./images/button/like.svg" alt="Лайк">
+                            <button class="element__button-like" type="button" aria-label="Понравилось">
                         </div>
                     </li>
                     <li class="element">
                         <img class="element__photo" src="./images/island.jpg" alt="Остров">
                         <div class="element__mesto">
                             <p class="element__text">Лофот</p>
-                            <img class="element__like" src="./images/button/like.svg" alt="Лайк">
+                            <button class="element__button-like" type="button" aria-label="Понравилось">
                         </div>
                     </li>
                     <li class="element">
                         <img class="element__photo" src="./images/mountains.jpg" alt="Горы">
                         <div class="element__mesto">
                             <p class="element__text">Алтай</p>
-                            <img class="element__like" src="./images/button/like.svg" alt="Лайк">
+                            <button class="element__button-like" type="button" aria-label="Понравилось">
                         </div>
                     </li>
                     <li class="element">
                         <img class="element__photo" src="./images/ocean.jpg" alt="Океан">
                         <div class="element__mesto">
                             <p class="element__text">Балтика</p>
-                            <img class="element__like" src="./images/button/like.svg" alt="Лайк">
+                            <button class="element__button-like" type="button" aria-label="Понравилось">
                         </div>
                     </li>
                     <li class="element">
                         <img class="element__photo" src="./images/ladder.jpg" alt="Лестница">
                         <div class="element__mesto">
                             <p class="element__text">Калининград</p>
-                            <img class="element__like" src="./images/button/like.svg" alt="Лайк">
+                            <button class="element__button-like" type="button" aria-label="Понравилось">
                         </div>
                     </li>
                 </ul>
@@ -79,18 +79,22 @@
         </footer>
 
         <div class="popup">
-            <form class="popup__container" method="get">
-                <button class="popup__close"></button>
-                <p class="popup__title">Редактировать профиль</p>
-                <input class="popup__name" type="text" name="name" id="name" value="" required>
-                <input class="popup__info" type="text" name="text" id="text" value="" required>
-                <button class="popup__submit" type="submit">Сохранить</button>
-            </form>
+            <div class="popup__container">
+                <button class="popup__close" type="button" aria-label="Закрыть"></button>
+                <form class="popup__form" name="profile-form" method="get">
+                    <h2 class="popup__title">Редактировать профиль</h2>
+                    <input class="popup__input popup__input_type_name" type="text" name="name" id="name"
+                        placeholder="Введите имя" value="" required>
+                    <input class="popup__input popup__input_type_prof" type="text" name="text" id="text"
+                        placeholder="Введите профессию" value="" required>
+                    <button class="popup__submit" type="submit">Сохранить</button>
+                </form>
+            </div>
         </div>
 
     </div>
 
-    <script src="./script/script.js"></script>
+    <script src="./script/index.js"></script>
 </body>
 
 </html>
