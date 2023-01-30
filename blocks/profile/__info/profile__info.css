@@ -2,9 +2,9 @@
     margin: auto auto auto 30px;
     max-width: 380px;
     display: grid;
-    grid-template-columns: 1fr 22px;
+    grid-template-columns: 1fr 24px;
     grid-template-rows: 1fr;
-    row-gap: 13px;
+    row-gap: 9px;
     align-content: start;
 }
 
