@@ -28,52 +28,18 @@
 
             <section class="elements" aria-label="Главные">
                 <ul class="content">
-                    <li class="element">
-                        <img class="element__photo" src="./images/karachaevsk.jpg" alt="Карачаевск">
-                        <div class="element__mesto">
-                            <h2 class="element__text">Карачаевск</h2>
-                            <button class="element__button-like" type="button" aria-label="Понравилось"></button>
-                        </div>
-                    </li>
-                    <li class="element">
-                        <img class="element__photo" src="./images/zima.jpg" alt="Зима город">
-                        <div class="element__mesto">
-                            <h2 class="element__text">Комсомольск-на-Амуре</h2>
-                            <button class="element__button-like" type="button" aria-label="Понравилось"></button>
-                        </div>
-                    </li>
-                    <li class="element">
-                        <img class="element__photo" src="./images/island.jpg" alt="Остров">
-                        <div class="element__mesto">
-                            <h2 class="element__text">Лофот</h2>
-                            <button class="element__button-like" type="button" aria-label="Понравилось"></button>
-                        </div>
-                    </li>
-                    <li class="element">
-                        <img class="element__photo" src="./images/mountains.jpg" alt="Горы">
-                        <div class="element__mesto">
-                            <h2 class="element__text">Алтай</h2>
-                            <button class="element__button-like" type="button" aria-label="Понравилось"></button>
-                        </div>
-                    </li>
-                    <li class="element">
-                        <img class="element__photo" src="./images/ocean.jpg" alt="Океан">
-                        <div class="element__mesto">
-                            <h2 class="element__text">Балтика</h2>
-                            <button class="element__button-like" type="button" aria-label="Понравилось"></button>
-                        </div>
-                    </li>
-                    <li class="element">
-                        <img class="element__photo" src="./images/ladder.jpg" alt="Лестница">
-                        <div class="element__mesto">
-                            <h2 class="element__text">Калининград</h2>
-                            <button class="element__button-like" type="button" aria-label="Понравилось"></button>
-                        </div>
-                    </li>
                 </ul>
             </section>
         </main>
-
+        <template class="template">
+            <li class="element">
+                <img class="element__photo" src="" alt="">
+                <div class="element__mesto">
+                    <h2 class="element__text"></h2>
+                    <button class="element__button-like" type="button" aria-label="Понравилось"></button>
+                </div>
+            </li>
+        </template>
         <footer>
             <p class="footer">&copy; 2020 Mesto Russia</p>
         </footer>
@@ -91,6 +57,20 @@
                 </form>
             </div>
         </div>
+
+        <!-- <div class="popup">
+            <div class="popup__container">
+                <button class="popup__close" type="button" aria-label="Закрыть"></button>
+                <form class="popup__form" name="profile-form" method="get">
+                    <h2 class="popup__title">Редактировать профиль</h2>
+                    <input class="popup__input popup__input_type_name" type="text" name="name" id="name"
+                        placeholder="Введите имя" value="" required>
+                    <input class="popup__input popup__input_type_prof" type="text" name="text" id="text"
+                        placeholder="Введите профессию" value="" required>
+                    <button class="popup__submit" type="submit">Сохранить</button>
+                </form>
+            </div>
+        </div> -->
 
     </div>
 
