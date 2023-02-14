@@ -31,6 +31,7 @@
                 </ul>
             </section>
         </main>
+        
         <template class="template">
             <li class="element element_delete">
                 <button class="element__button-delete" type="button" aria-label="Удалить"></button>
@@ -41,6 +42,7 @@
                 </div>
             </li>
         </template>
+
         <footer>
             <p class="footer">&copy; 2020 Mesto Russia</p>
         </footer>
@@ -66,7 +68,7 @@
                     <h2 class="popup__title">Новое место</h2>
                     <input class="popup__input popup__input_type_mesto" type="text" name="name" placeholder="Название"
                         value="" required>
-                    <input class="popup__input popup__input_type_link" type="link" name="link"
+                    <input class="popup__input popup__input_type_link" type="text" name="link"
                         placeholder="Ссылка на картинку" value="" required>
                     <button class="popup__submit" type="submit">Сохранить</button>
                 </form>
@@ -75,7 +77,7 @@
         <div class="popup popup__open_image">
             <div class="popup__image">
                 <button class="popup__close-image" type="button" aria-label="Закрыть"></button>
-                <img class="element__photo_popup" src="" alt="">
+                <img class="element__photo_popup" src="#" alt="">
                 <p class="popup__text"></p>
             </div>
         </div>
