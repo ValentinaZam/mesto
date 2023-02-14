@@ -37,14 +37,14 @@ const formElement = document.querySelector('.popup__container_profile-edit');
 const cardsTemplate = document.querySelector('.template').content;
 const contentElements = document.querySelector('.content');
 const popupClose = document.querySelector('.popup__close_edit');
-const popupAdd = document.querySelector('.popup__add-image');
+const popupAdd = document.querySelector('.popup_add');
 const buttonAdd = document.querySelector('.profile__button-add');
 const popupCloseAdd = document.querySelector('.popup__close_add');
 const nameImage = document.querySelector('.popup__input_type_mesto');
 const linkImage = document.querySelector('.popup__input_type_link');
 const formAddImage = document.querySelector('.popup__container_image-add');
-const popupOpenImage = document.querySelector('.popup__open-image');
-const elementPopupImageOpen = document.querySelector('.element__photo-popup');
+const popupOpenImage = document.querySelector('.popup_image');
+const elementPopupImageOpen = document.querySelector('.popup__photo');
 const popupImageText = document.querySelector('.popup__text');
 const popupCloseImage = document.querySelector('.popup__close-image');
 
