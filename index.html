@@ -32,7 +32,8 @@
             </section>
         </main>
         <template class="template">
-            <li class="element">
+            <li class="element element_delete">
+                <button class="element__button-delete" type="button" aria-label="Удалить"></button>
                 <img class="element__photo" src="" alt="">
                 <div class="element__mesto">
                     <h2 class="element__text"></h2>
@@ -44,33 +45,40 @@
             <p class="footer">&copy; 2020 Mesto Russia</p>
         </footer>
 
-        <div class="popup">
-            <div class="popup__container">
-                <button class="popup__close" type="button" aria-label="Закрыть"></button>
+        <div class="popup popup_profile">
+            <div class="popup__container popup__container_profile-edit">
+                <button class="popup__close popup__close_edit" type="button" aria-label="Закрыть"></button>
                 <form class="popup__form" name="profile-form" method="get">
                     <h2 class="popup__title">Редактировать профиль</h2>
-                    <input class="popup__input popup__input_type_name" type="text" name="name" id="name"
-                        placeholder="Введите имя" value="" required>
-                    <input class="popup__input popup__input_type_prof" type="text" name="text" id="text"
+                    <input class="popup__input popup__input_type_name" type="text" name="name" placeholder="Введите имя"
+                        value="" required>
+                    <input class="popup__input popup__input_type_prof" type="text" name="text"
                         placeholder="Введите профессию" value="" required>
                     <button class="popup__submit" type="submit">Сохранить</button>
                 </form>
             </div>
         </div>
 
-        <!-- <div class="popup">
-            <div class="popup__container">
-                <button class="popup__close" type="button" aria-label="Закрыть"></button>
+        <div class="popup popup__add_image">
+            <div class="popup__container popup__container_image-add">
+                <button class="popup__close popup__close_add" type="button" aria-label="Закрыть"></button>
                 <form class="popup__form" name="profile-form" method="get">
-                    <h2 class="popup__title">Редактировать профиль</h2>
-                    <input class="popup__input popup__input_type_name" type="text" name="name" id="name"
-                        placeholder="Введите имя" value="" required>
-                    <input class="popup__input popup__input_type_prof" type="text" name="text" id="text"
-                        placeholder="Введите профессию" value="" required>
+                    <h2 class="popup__title">Новое место</h2>
+                    <input class="popup__input popup__input_type_mesto" type="text" name="name" placeholder="Название"
+                        value="" required>
+                    <input class="popup__input popup__input_type_link" type="link" name="link"
+                        placeholder="Ссылка на картинку" value="" required>
                     <button class="popup__submit" type="submit">Сохранить</button>
                 </form>
             </div>
-        </div> -->
+        </div>
+        <div class="popup popup__open_image">
+            <div class="popup__image">
+                <button class="popup__close-image" type="button" aria-label="Закрыть"></button>
+                <img class="element__photo_popup" src="" alt="">
+                <p class="popup__text"></p>
+            </div>
+        </div>
 
     </div>
 
