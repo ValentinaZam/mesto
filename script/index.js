@@ -1,30 +1,3 @@
-const initialCards = [
-    {
-        name: 'Архыз',
-        link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg'
-    },
-    {
-        name: 'Челябинская область',
-        link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/chelyabinsk-oblast.jpg'
-    },
-    {
-        name: 'Иваново',
-        link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/ivanovo.jpg'
-    },
-    {
-        name: 'Камчатка',
-        link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg'
-    },
-    {
-        name: 'Холмогорский район',
-        link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kholmogorsky-rayon.jpg'
-    },
-    {
-        name: 'Байкал',
-        link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg'
-    }
-];
-
 const buttonEditProfile = document.querySelector('.profile__button-edit');
 const popupProfile = document.querySelector('.popup_profile');
 const profileName = document.querySelector('.profile__name');
@@ -62,7 +35,9 @@ buttonEditProfile.addEventListener('click', () => {
     jobInput.value = profileInfo.textContent;
 });
 
-buttonPopupCloseEditProfile.addEventListener('click', closePopup);
+buttonPopupCloseEditProfile.addEventListener('click', () => {
+    closePopup(popupProfile);
+});
 
 function handleFormEditProfile(evt) {
     evt.preventDefault();
@@ -70,7 +45,14 @@ function handleFormEditProfile(evt) {
     profileInfo.textContent = jobInput.value;
     closePopup(popupProfile);
 }
+
 formPopupEditProfile.addEventListener('submit', handleFormEditProfile);
+
+function openZoomImage(evt) {
+    elementPopupImageOpen.src = evt.target.src;
+    elementPopupImageOpen.alt = evt.target.alt;
+    popupImageText.textContent = evt.target.alt;
+}
 
 const createCard = (link, name) => {
     const cardElement = cardsTemplate.cloneNode(true);
@@ -78,23 +60,19 @@ const createCard = (link, name) => {
     elementPhotoCard.src = link;
     elementPhotoCard.alt = name;
     cardElement.querySelector('.element__text').textContent = name;
-    cardElement.querySelector('.element__photo').addEventListener('click', (evt) => {
-        openPopup(popupOpenImage);
 
-        elementPopupImageOpen.src = evt.target.src;
-        elementPopupImageOpen.alt = evt.target.alt;
-        popupImageText.textContent = evt.target.alt;
+    elementPhotoCard.addEventListener('click', (evt) => {
+        openPopup(popupOpenImage);
+        openZoomImage(evt);
     });
 
-    const handleClickElement = (evt) => {
-        const { target } = evt;
-        if (target.closest('.element__button-like')) {
-            target.classList.toggle('element__button-like_active');
-        } else if (target.closest('.element__button-delete')) {
-            target.closest('.element').remove();
-        }
-    };
-    cardElement.addEventListener('click', (evt) => handleClickElement(evt));
+    cardElement.querySelector('.element__button-like').addEventListener('click', (evt) => {
+        evt.target.classList.toggle('element__button-like_active');
+    })
+
+    cardElement.querySelector('.element__button-delete').addEventListener('click', (evt) => {
+        evt.target.closest('.element').remove();
+    })
 
     return cardElement;
 }
