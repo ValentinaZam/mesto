@@ -23,14 +23,12 @@ const buttonAddElement = document.querySelector('.popup__submit_button_add');
 const formAdd = document.querySelector('.popup__form_add');
 const buttonSubmitAdd = document.querySelector('.popup__submit_add');
 
-
 function closeByEscape(evt) {
     if (evt.key === "Escape") {
         const openPopup = document.querySelector(".popup_opened");
         closePopup(openPopup);
     }
 }
-
 
 function openPopup(element) {
     element.classList.add('popup_opened');
@@ -48,7 +46,6 @@ function closePopup(element) {
     element.classList.remove('popup_opened');
     document.removeEventListener('keydown', closeByEscape);
 }
-
 
 buttonEditProfile.addEventListener('click', () => {
     openPopup(popupProfile);
