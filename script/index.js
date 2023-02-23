@@ -35,7 +35,7 @@ function openPopup(element) {
     document.addEventListener('keydown', closeByEscape);
 }
 
-overlayAllPopup = Array.from(document.querySelectorAll('.popup'));
+const overlayAllPopup = Array.from(document.querySelectorAll('.popup'));
 overlayAllPopup.forEach((element) => {
     element.addEventListener('click', (evt) => {
         closePopup(evt.target);
